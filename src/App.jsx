@@ -1,3 +1,8 @@
+import healthcarePreview from "./assets/university-healthcare.png";
+import airlinePreview from "./assets/Airline-System.png";
+import eventsyncPreview from "./assets/eventsync.png"
+import nudityChecker from "./assets/nudity-checker.png"
+
 const projects = [
   {
     title: "University of Vavuniya Healthcare System",
@@ -5,13 +10,35 @@ const projects = [
     description:
       "A modern web application built to streamline the operations of the University of Vavuniya Medical Center.",
     impact: "All-in-one digital platform for students, staff, and medical personnel to manage medical records, appointments, and inventory efficiently.",
+    image: healthcarePreview,
+    imageAlt: "University of Vavuniya healthcare system preview",
   },
   {
-    title: "SriLanka Airline Mini Project ",
+    title: "SriLanka Airline Mini Project",
     category: "OOP",
     description:
       "A Sri Lanka Airline Booking System This project is a Java-based airline booking system designed for Sri Lankan Airlines.",
     impact: "enables users to register, book flights, view rates, and manage their booking history. The program simulates a simplified airline booking experience with basic functionalities.",
+    image: airlinePreview,
+    imageAlt: "Sri Lanka Airline booking interface preview",
+  },
+    {
+    title: "Eventsync Online Ticket Booking System",
+    category: "Full-stack develop",
+    description:
+      "A full-stack event ticketing and automated QR verification platform built with React, Node.js, MySQL, and React Native.",
+    impact: "Eliminates manual ticket processing by seamlessly connecting online PayHere checkouts with instant automated email delivery and mobile gate scanning.",
+    image: eventsyncPreview,
+    imageAlt: "Eventsync Online Ticket Booking interface preview",
+  },
+    {
+    title: "Nudity Checker System",
+    category: "python develop",
+    description:
+      "A adult nudity checker system before upload on Social Media as a creator.",
+    impact: "Eliminates being uploading videos that are not allowed on Social media platforms.",
+    image: nudityChecker,
+    imageAlt: "Nudity Checker preview",
   }
 ];
 
@@ -27,6 +54,7 @@ const skills = [
   "Responsive Design",
   "Performance",
   "Accessibility",
+  "UI/UX Design"
 ];
 
 const stats = [
@@ -120,10 +148,17 @@ export default function App() {
           <div className="projects-grid">
             {projects.map((project) => (
               <article className="project-card" key={project.title}>
-                <p className="project-category">{project.category}</p>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <span>{project.impact}</span>
+                <img
+                  src={project.image}
+                  alt={project.imageAlt}
+                  className="project-image"
+                />
+                <div className="project-content">
+                  <p className="project-category">{project.category}</p>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <span>{project.impact}</span>
+                </div>
               </article>
             ))}
           </div>

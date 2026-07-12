@@ -346,14 +346,35 @@ main {
 .project-card {
   display: flex;
   flex-direction: column;
-  min-height: 280px;
-  padding: 28px;
-  border-radius: 28px;
+  min-height: 400px;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
   background: var(--surface-strong);
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 198px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+  transition: transform 220ms ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.03);
+}
+
+.project-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 28px;
 }
 
 .project-category {
