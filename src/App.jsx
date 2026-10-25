@@ -2,16 +2,20 @@ import healthcarePreview from "./assets/university-healthcare.png";
 import airlinePreview from "./assets/Airline-System.png";
 import eventsyncPreview from "./assets/eventsync.png"
 import nudityChecker from "./assets/nudity-checker.png"
+import FoodieDrop from "./assets/FoodieDrop.png"
+import profilePhoto from "./assets/my.png"
 
 const projects = [
   {
-    title: "University of Vavuniya Healthcare System",
+    title: "Re-EngineeringUniversity of Vavuniya Healthcare System",
     category: "Full-stack develop",
     description:
       "A modern web application built to streamline the operations of the University of Vavuniya Medical Center.",
     impact: "All-in-one digital platform for students, staff, and medical personnel to manage medical records, appointments, and inventory efficiently.",
     image: healthcarePreview,
     imageAlt: "University of Vavuniya healthcare system preview",
+    progress: 85,
+    next: "Next: Dockerising"
   },
   {
     title: "SriLanka Airline Mini Project",
@@ -21,6 +25,7 @@ const projects = [
     impact: "enables users to register, book flights, view rates, and manage their booking history. The program simulates a simplified airline booking experience with basic functionalities.",
     image: airlinePreview,
     imageAlt: "Sri Lanka Airline booking interface preview",
+    progress: 100,
   },
     {
     title: "Eventsync Online Ticket Booking System",
@@ -30,6 +35,8 @@ const projects = [
     impact: "Eliminates manual ticket processing by seamlessly connecting online PayHere checkouts with instant automated email delivery and mobile gate scanning.",
     image: eventsyncPreview,
     imageAlt: "Eventsync Online Ticket Booking interface preview",
+    progress: 70,
+    next: "Next: Domain Setup"
   },
     {
     title: "Nudity Checker System",
@@ -39,6 +46,16 @@ const projects = [
     impact: "Eliminates being uploading videos that are not allowed on Social media platforms.",
     image: nudityChecker,
     imageAlt: "Nudity Checker preview",
+    progress: 100,
+  },  {
+    title: "FoodieDrop",
+    category: "Full-stack develop",
+    description:
+      "A full-stack food Store built with React, Node.js, MySQL, and React Native.",
+    impact: "Enhanced Customer Experience by providing a seamless online ordering platform, allowing users to browse menus, place orders, and track deliveries in real-time.",
+    image: FoodieDrop,
+    imageAlt: "Foodie Drop preview",
+    progress: 100,
   }
 ];
 
@@ -74,6 +91,11 @@ export default function App() {
       <header className="hero">
         <nav className="nav">
           <div className="brand">
+            <img
+              src={profilePhoto}
+              alt="Kosala Madushan Weerakkodi"
+              className="profile-image"
+            />
             <span>Hey, I'm Kosala Madushan Weerakkodi</span>
           </div>
 
@@ -122,7 +144,7 @@ export default function App() {
               </div>
               <div>
                 <span>Specialty</span>
-                <strong>Full Stack Systems</strong>
+                <strong>Full Stack Systems & Network Engineer</strong>
               </div>
             </div>
           </aside>
@@ -158,6 +180,28 @@ export default function App() {
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
                   <span>{project.impact}</span>
+                  <div className="project-progress">
+                    <div className="project-progress-heading">
+                      <span>Progress</span>
+                      <strong>{project.progress}%</strong>
+                    </div>
+                    <div
+                      className="project-progress-track"
+                      role="progressbar"
+                      aria-label={`${project.title} progress`}
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow={project.progress}
+                    >
+                      <div
+                        className="project-progress-fill"
+                        style={{ width: `${project.progress}%` }}
+                      />
+                    </div>
+                  </div>
+                  {project.next && (
+                    <p className="project-next">{project.next}</p>
+                  )}
                 </div>
               </article>
             ))}
