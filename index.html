@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kosala Madhushan | Full-stack developer</title>
+  <meta name="description" content="Portfolio of Kosala Madhushan, an IT undergraduate building full-stack web and mobile apps.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0F1E'/%3E%3Ctext x='16' y='23' font-family='sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='white'%3EK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Instrument Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+          colors: {
+            accent: '#0A0F1E',
+            neutral: {
+              900: '#0A0F1E',
+              800: '#0A0F1E',
+              700: '#0A0F1E',
+              300: '#8298AA',
+              200: '#9AAFC1'
+            },
+            teal: { 50: '#D2E4EF', 800: '#0A0F1E', 900: '#0A0F1E' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { color-scheme: light; }
+    a:focus-visible { outline: 2px solid #0A0F1E; outline-offset: 3px; border-radius: 6px; }
+    #skills li { border: 1px solid #9AAFC1; }
+    .dots {
+      background-image: radial-gradient(#e2e2e2 1px, transparent 1px);
+      background-size: 22px 22px;
+      -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent);
+      mask-image: linear-gradient(to bottom, #000 40%, transparent);
+    }
+  </style>
+</head>
+<body class="bg-[#E4F0F6] font-sans text-[#0A0F1E] antialiased">
+
+  <header class="sticky top-0 z-20 border-b border-neutral-200 bg-white/80 backdrop-blur">
+    <nav class="mx-auto flex h-16 max-w-5xl items-center justify-between gap-2 px-3 sm:gap-4 sm:px-6" aria-label="Main">
+      <a href="#top" class="whitespace-nowrap text-[13px] font-semibold text-neutral-900 sm:text-base">Hi I'm Kosala Madhushan</a>
+      <div class="flex shrink-0 items-center gap-7 text-sm font-medium text-neutral-600">
+        <a class="hidden hover:text-accent md:block" href="#projects">Projects</a>
+        <a class="hidden hover:text-accent md:block" href="#skills">Skills</a>
+        <a class="hidden hover:text-accent md:block" href="#education">Education</a>
+        <a class="hidden hover:text-accent md:block" href="#certificates">Certificates</a>
+        <a class="rounded-full bg-neutral-900 px-3 py-2 text-white hover:bg-accent sm:px-4" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="relative">
+      <div class="dots pointer-events-none absolute inset-0" aria-hidden="true"></div>
+      <div class="relative mx-auto max-w-5xl px-6 pb-20 pt-20 sm:pb-28 sm:pt-28">
+        <h1 class="max-w-3xl text-4xl font-semibold leading-[1.05] tracking-tight text-neutral-900 sm:text-6xl">
+          I build full-stack web and mobile apps.
+        </h1>
+        <p class="mt-6 max-w-xl text-lg leading-relaxed text-neutral-600">
+          I’m Kosala, an IT undergraduate at the University of Vavuniya. I work with React, Node.js and FastAPI, and I’m looking for a full-stack internship.
+        </p>
+
+        <!-- Edit links -->
+        <div class="mt-9 flex flex-wrap items-center gap-3">
+          <a class="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-teal-800" href="./Cv/My_CV_ATS.pdf">Download CV</a>
+          <a class="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold text-neutral-800 hover:border-neutral-400 hover:bg-neutral-50" href="#projects">See my projects</a>
+          <div class="ml-1 flex items-center gap-1 text-neutral-500">
+            <a class="rounded-full p-2.5 hover:bg-neutral-100 hover:text-neutral-900" href="https://github.com/kosala-dev" aria-label="GitHub">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            </a>
+            <a class="rounded-full p-2.5 hover:bg-neutral-100 hover:text-neutral-900" href="https://www.linkedin.com/in/kosala-madhushan" aria-label="LinkedIn">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            </a>
+            <a class="rounded-full p-2.5 hover:bg-neutral-100 hover:text-neutral-900" href="mailto:kosalamadushan11976@gmail.com" aria-label="Email">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mx-auto max-w-5xl scroll-mt-20 px-6 py-16">
+      <h2 class="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">Projects</h2>
+
+      <div class="mt-8 grid gap-5 md:grid-cols-2">
+
+        <article class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-xl font-semibold text-neutral-900">EventSphere</h3>
+            <span class="rounded-full bg-teal-50 px-2.5 py-1 text-xs font-medium text-teal-800">Latest</span>
+          </div>
+          <p class="mt-3 leading-relaxed text-neutral-600">
+            Event and venue booking with QR tickets. A ticket agent, a venue agent and a coordinator agent work together using Google ADK.
+          </p>
+          <ul class="mt-5 flex flex-wrap gap-2 text-sm text-neutral-700">
+            <li class="rounded-full bg-neutral-100 px-3 py-1">Python</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">FastAPI</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">Google ADK</li>
+          </ul>
+          <div class="mt-auto flex gap-3 pt-6 text-sm font-medium">
+            <a class="rounded-full border border-neutral-300 px-4 py-2 hover:bg-neutral-50" href="https://eventsphere-2y9h.onrender.com/">Live site</a>
+            <a class="rounded-full border border-neutral-300 px-4 py-2 hover:bg-neutral-50" href="https://github.com/kosala-dev/EventSphere">Code</a>
+          </div>
+        </article>
+
+        <article class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-xl font-semibold text-neutral-900">GenTicket</h3>
+            <span class="text-sm text-neutral-500">2026</span>
+          </div>
+          <p class="mt-3 leading-relaxed text-neutral-600">
+            Online ticket buying for events, with PayHere payments, email OTP sign-up and QR tickets. A React Native app lets staff scan tickets at the door.
+          </p>
+          <ul class="mt-5 flex flex-wrap gap-2 text-sm text-neutral-700">
+            <li class="rounded-full bg-neutral-100 px-3 py-1">React</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">Node.js</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">MySQL</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">React Native</li>
+          </ul>
+          <div class="mt-auto flex gap-3 pt-6 text-sm font-medium">
+            <a class="rounded-full border border-neutral-300 px-4 py-2 hover:bg-neutral-50" href="https://event-sync-xi.vercel.app/">Live site</a>
+            <a class="rounded-full border border-neutral-300 px-4 py-2 hover:bg-neutral-50" href="https://github.com/kosala-dev/GenTicket">Code</a>
+          </div>
+        </article>
+
+        <article class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-xl font-semibold text-neutral-900">University Medical Center System</h3>
+            <span class="text-sm text-neutral-500">2025</span>
+          </div>
+          <p class="mt-3 leading-relaxed text-neutral-600">
+            A rebuild of the University of Vavuniya medical center’s system: online forms, doctor appointments and drug inventory, with separate access for admins, doctors and students.
+          </p>
+          <ul class="mt-5 flex flex-wrap gap-2 text-sm text-neutral-700">
+            <li class="rounded-full bg-neutral-100 px-3 py-1">React</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">Node.js</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">MongoDB</li>
+          </ul>
+          <div class="mt-auto flex gap-3 pt-6 text-sm font-medium">
+            <a class="rounded-full border border-neutral-300 px-4 py-2 hover:bg-neutral-50" href="https://github.com/kosala-dev/Re-Engineering-University-of-Vavuniya-Healtcare-Project">Code</a>
+          </div>
+        </article>
+
+        <article class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-xl font-semibold text-neutral-900">FoodieDrop</h3>
+            <span class="text-sm text-neutral-500">2026</span>
+          </div>
+          <p class="mt-3 leading-relaxed text-neutral-600">
+            Backend for a food ordering app, built with a team. I wrote the REST API endpoints.
+          </p>
+          <ul class="mt-5 flex flex-wrap gap-2 text-sm text-neutral-700">
+            <li class="rounded-full bg-neutral-100 px-3 py-1">Java</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">Spring Boot</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">MongoDB</li>
+          </ul>
+          <div class="mt-auto flex gap-3 pt-6 text-sm font-medium">
+            <a class="rounded-full border border-neutral-300 px-4 py-2 hover:bg-neutral-50" href="https://github.com/kosala-dev/FoodieDrop-Team-Project">Code</a>
+          </div>
+        </article>
+
+        <article class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-xl font-semibold text-neutral-900">Gene activity in immune cells for Still’s disease</h3>
+            <span class="text-sm text-neutral-500">2026</span>
+          </div>
+          <p class="mt-3 leading-relaxed text-neutral-600">
+            A data analysis in R of public gene activity data from blood immune cells. It compared active and inactive adult-onset Still’s disease with healthy samples, found 12 genes that changed in active disease, and tested an SVM classifier. With only 9 samples, the results are preliminary.
+          </p>
+          <ul class="mt-5 flex flex-wrap gap-2 text-sm text-neutral-700">
+            <li class="rounded-full bg-neutral-100 px-3 py-1">R</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">Limma</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">Gene Ontology</li>
+            <li class="rounded-full bg-neutral-100 px-3 py-1">SVM</li>
+          </ul>
+          <div class="mt-auto flex gap-3 pt-6 text-sm font-medium">
+            <a class="rounded-full border border-neutral-300 px-4 py-2 hover:bg-neutral-50" href="https://github.com/kosala-dev/AOSD_Project.git">Code and report</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mx-auto max-w-5xl scroll-mt-20 px-6 py-16">
+      <h2 class="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">Skills</h2>
+
+      <div class="mt-8 grid gap-x-10 gap-y-8 sm:grid-cols-2">
+        <div>
+          <h3 class="font-semibold text-neutral-900">Languages</h3>
+          <ul class="mt-3 flex flex-wrap gap-2 text-sm text-neutral-700">
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">C++</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Java</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Python</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">JavaScript</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">TypeScript</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-neutral-900">Frontend</h3>
+          <ul class="mt-3 flex flex-wrap gap-2 text-sm text-neutral-700">
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">React</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Tailwind CSS</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">React Native (Expo)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-neutral-900">Backend and data</h3>
+          <ul class="mt-3 flex flex-wrap gap-2 text-sm text-neutral-700">
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Node.js</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Express</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">FastAPI</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Spring Boot</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">REST APIs</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">JWT auth</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">MySQL</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">MongoDB</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-neutral-900">AI agents and tools</h3>
+          <ul class="mt-3 flex flex-wrap gap-2 text-sm text-neutral-700">
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Google ADK</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Multi-agent systems</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Git and GitHub</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Postman</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Docker</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Vercel</li>
+            <li class="rounded-full bg-teal-50 px-3 py-1.5 text-teal-900">Render</li>
+          </ul>
+        </div>
+      </div>
+    </section>  
+
+    <!-- Education -->
+    <section id="education" class="mx-auto max-w-5xl scroll-mt-20 px-6 py-16">
+      <h2 class="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">Education</h2>
+
+      <div class="mt-8 rounded-2xl border border-neutral-200 p-6">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+          <h3 class="text-lg font-semibold text-neutral-900">BSc Honours in Information Technology</h3>
+          <span class="text-sm text-neutral-500">2023 to now</span>
+        </div>
+        <p class="mt-1 text-neutral-600">University of Vavuniya</p>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="mx-auto max-w-5xl scroll-mt-20 px-6 py-16">
+      <h2 class="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">Certificates</h2>
+
+      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Add certificate -->
+        <a class="group block overflow-hidden rounded-2xl border border-neutral-200 bg-white transition hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0" href="./Certificates/javascript-essentials-1.jpg">
+          <div class="relative flex aspect-[3/2] items-center justify-center overflow-hidden rounded-t-2xl bg-white text-neutral-300">
+            <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="m8.5 13.5-1.5 7 5-2.5 5 2.5-1.5-7"/></svg>
+            <img class="absolute inset-0 h-full w-full object-contain" src="./Certificates/javascript-essentials-1.jpg" alt="JavaScript Essentials 1 certificate" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold text-neutral-900">JavaScript Essentials 1</h3>
+            <p class="mt-1 text-sm text-neutral-600">Cisco Networking Academy</p>
+          </div>
+        </a>
+
+        <div class="overflow-hidden rounded-2xl border border-dashed border-neutral-300 bg-white">
+          <div class="flex h-44 items-center justify-center bg-neutral-50 text-neutral-300">
+            <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="m8.5 13.5-1.5 7 5-2.5 5 2.5-1.5-7"/></svg>
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold text-neutral-900">Switching, Routing, and Wireless Essentials</h3>
+            <p class="mt-1 text-sm text-neutral-600">Cisco Networking Academy, in progress</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mx-auto max-w-5xl scroll-mt-20 px-6 py-16">
+      <div class="rounded-3xl border border-neutral-200 p-8 sm:p-12">
+        <h2 class="max-w-xl text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">Looking for a full-stack intern?</h2>
+        <p class="mt-4 max-w-lg text-lg leading-relaxed text-neutral-600">
+          I’d like to hear about it. Email is the quickest way to reach me.
+        </p>
+        <a class="mt-8 inline-block max-w-full break-all rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-teal-800 sm:break-normal" href="mailto:kosalamadushan11976@gmail.com">kosalamadushan11976@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mx-auto max-w-5xl border-t border-neutral-200 px-6 py-8 text-sm text-neutral-500">
+    © 2026 Kosala Madhushan
+  </footer>
+</body>
+</html>
